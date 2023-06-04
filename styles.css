@@ -1,0 +1,190 @@
+:root {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+
+}
+
+html{
+    color: black;
+}
+
+body {
+    color: black;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#name {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: lighter;
+    white-space: nowrap;
+}
+
+#name:hover{
+    color: #5f5f5f;
+}
+
+#nav-bar {
+    display: flex;
+    text-align: right;
+    color: gray;
+}
+
+.nav {
+    margin-left: 20px;
+    text-decoration: none;
+    color: gray;
+    white-space: nowrap;
+}
+
+.nav:hover {
+    color: black;
+}
+
+.nav.active {
+    color: black;
+}
+
+#insta {
+    margin-top: -2.3px;
+}
+
+#work-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#furniture {
+    margin: 0 10px;
+}
+
+#cabinetry {
+    margin: 0 10px;
+}
+
+.work-category {
+    color: gray;
+}
+
+.work-category:hover {
+    color: black;
+}
+
+.work-category.active {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding-left: 105px;
+    padding-right: 105px;
+    margin-top: 90px;
+    position: relative;
+  }
+
+.grid-item {
+    text-align: center;
+    transition: opacity 0.3s ease-in;
+    text-decoration: none !important;
+    color: black;
+}
+
+.grid-item:hover {
+    opacity: 70%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.grid-item .title {
+    margin-top: 5px;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-info {
+    height: 25px;
+    padding-top: 75px;
+    font-style: oblique;
+}
+
+#copyright {
+    padding: 50px 0 0 0;
+}
+  
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #name {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nav-bar {
+        text-align: left;
+    }
+  }
+@media (min-width: 950px) {
+    #work-bar {
+        margin-left: 400px;
+    }
+}
+  @media (max-width: 950px) {
+    #header {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #header {
+      margin-left: 30px;
+      margin-right: 15px;
+    }
+    #nav-bar {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .grid-item-page {
+      display:flow-root;
+    }
+  }
+
+  
+  
